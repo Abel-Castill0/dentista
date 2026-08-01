@@ -1,32 +1,37 @@
-# Legal Notes — Cláusulas a implementar
+# Legal Notes — Dra. Blue · Cláusulas implementadas
 
-## Política de Privacidad
-- RGPD + LOPDGDD (España)
-- Datos recogidos: nombre, email, teléfono, datos de salud (categoría especial art. 9 RGPD)
-- Base legal: consentimiento explícito + ejecución de servicio sanitario
-- Plazo conservación: 5 años desde último tratamiento (Ley 41/2002)
-- Derechos ARSULIPO: acceso, rectificación, supresión, limitación, portabilidad, oposición
-- Delegado Protección Datos: contacto@clinica.com
-- Transferencias internacionales: no se realizan
-- Medidas de seguridad: cifrado SSL, acceso restringido
+## Política de Privacidad (Perú + UE)
+- Ley 29733 (Ley de Protección de Datos Personales del Perú) + Reglamento DS 003-2013-JUS
+- RGPD para usuarios UE
+- Datos recogidos: nombre, email, WhatsApp, datos de salud (categoría especial)
+- Base legal: consentimiento previo, expreso e informado (art. 14 Ley 29733)
+- Derechos ARCO: acceso, rectificación, cancelación, oposición
+- Autoridad: Autoridad Nacional de Protección de Datos Personales del Perú
+- Cláusula IA: sin decisiones automatizadas, diagnóstico siempre supervisado
+- Conservación: historia clínica según normativa sanitaria peruana
 
 ## Términos de Servicio
-- Aceptación de términos al usar el sitio
-- Responsabilidad del usuario sobre veracidad de datos
-- Reserva de citas: política de cancelación (24h)
-- Limitación de responsabilidad
-- Legislación aplicable: España
-- Cláusula de arbitraje: controversias resueltas mediante arbitraje de consumo
+- Aceptación al usar el sitio
+- Reservas: cancelación 24h, no-show → restricciones
+- Propiedad intelectual (DL 822)
+- **Cláusula de arbitraje**: Ley 26572 (Ley de Arbitraje del Perú), Centro de Arbitraje de Lima, laudo definitivo e inapelable
 
 ## Aviso Legal
-- Titular: [Nombre Clínica], CIF/NIF, domicilio, registro mercantil
-- Propiedad intelectual: contenidos originales del sitio
-- Enlaces externos: no responsabilidad
-- DMCA Safe Harbor: procedimiento de notificación y retirada para infracciones de copyright. Contacto DMCA: dmca@clinica.com. Incluir identificación de obra infringida, declaración de buena fe, firma.
+- Titular: Dra. Blue (nombre legal pendiente de confirmar)
+- Domicilio: Av. Caminos del Inca 1234, Surco, Lima
+- **DMCA Safe Harbor**: procedimiento de notificación para fotos antes/después subidas por pacientes
+  - Email DMCA: dmca@drablue.pe
+  - Elementos: identificación de obra, localización del material, contacto, declaración de buena fe, declaración de veracidad, firma
+  - Retirada expedita tras notificación válida
+- Ley aplicable: Perú, tribunales de Lima
 
 ## Cookie Banner
-- Clasificación: técnicas (exentas), analíticas (Meta Pixel, GA4), preferenciales
+- Técnicas (exentas) vs analíticas (Meta Pixel, GA4)
 - Consentimiento previo para no-esenciales
-- Botones: "Aceptar todas", "Rechazar no esenciales", "Configurar"
-- Enlace a política de cookies en cada banner
+- Botones: "Aceptar todas" / "Solo necesarias"
 - Duración: 6 meses, renovable
+- Meta Pixel y GA4 descomentables en `layout.tsx`
+
+## WhatsApp
+- Número placeholder: +51 999 999 999 (configurable en `.env.local`)
+- Consentimiento para contacto por WhatsApp incluido en el flujo de reserva

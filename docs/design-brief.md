@@ -1,41 +1,47 @@
-# Design Brief — Clínica Dental Premium
+# Design Brief — Dra. Blue · Odontología Estética
 
-## Paleta de color (Dental)
-- **Primary**: `#0A8F7C` (verde dental fresco)
-- **Primary Dark**: `#067060`
-- **Primary Light**: `#E8F5F2`
-- **Secondary**: `#F5F0E8` (marfil cálido)
-- **Accent**: `#C8A87C` (oro suave)
-- **Background**: `#FAFAF9` (off-white)
-- **Surface**: `#FFFFFF`
-- **Text Primary**: `#1A1A2E`
-- **Text Secondary**: `#6B7280`
-- **Border**: `#E5E7EB`
+## Paleta de color (Blue brand)
+| Color | Código | Uso |
+|-------|--------|-----|
+| Azul profundo | `#0A1931` | Fondos de secciones oscuras, textos principales |
+| Azul medio | `#185ADB` | Botones, links, acentos, CTA |
+| Azul claro | `#5B9BD5` | Gradientes, detalles |
+| Blanco | `#FFFFFF` | Fondos, contraste |
+| Dorado sutil | `#D4AF37` | Detalles premium (estrellas, iconos) |
+| Gris cálido | `#F5F5F5` | Fondos secundarios |
 
 ## Tipografía
-- **Headings**: `Inter` (sans-serif, pesos 600-800)
-- **Body**: `Inter` (pesos 300-500)
-- Tamaños generosos: h1: clamp(2.5rem, 5vw, 4rem), h2: clamp(2rem, 4vw, 3rem)
+- **Headings**: `Playfair Display` (serif elegante, pesos 600-800)
+- **Body**: `Inter` (sans-serif limpia, pesos 300-500)
+- Tamaños: h1: clamp(2.5rem, 5vw, 4.5rem), h2: clamp(2rem, 4vw, 3rem)
 
 ## Espaciado
-- Sistema basado en Tailwind: 4-8-12-16-20-24-32-40-48-64-80-96
 - Section padding: py-24 md:py-32
-- Container max-width: 1280px
+- Container: max-w-7xl (1280px)
 
 ## Aurora UI (fondos de sección)
-- Gradientes borrosos: radial-gradient + backdrop-blur
-- Colores: primary-light, secondary, accent con opacidades 0.1-0.3
-- Animación lenta de desplazamiento (GSAP)
+- Gradientes radiales borrosos en azul: `rgba(24,90,219,0.15-0.35)` sobre fondos blancos o `#0A1931`
+- Opcional: acento dorado al 6-8% en esquinas
 
 ## Microinteracciones
-- Hover en cards: scale(1.02) + shadow-lg + transición 300ms
-- Botones: scale(0.97) on click, gradient en hover
-- Navegación: underline animation desde centro
-- Scroll reveal: fade-in + translateY(30px) con framer-motion
-- Aurora background: movimiento lento parallax con GSAP
+- Cards: hover scale(1.02) + shadow profunda + translateY(-4px)
+- Botones: shadow azul que crece en hover, scale(0.97) en click
+- Nav: underline desde centro en azul medio
+- Scroll reveal: framer-motion fade-in + translateY
+- Hero: GSAP stagger + parallax en foto de la doctora
+- WhatsApp flotante: aparece con spring + ping verde
 
 ## UI Espacial
-- Sombras suaves: box-shadow con blur-xl, opacidad baja
-- Sensación de flotación: translateY(-4px) en hover
+- Sombras suaves con blur-xl, opacidad baja
+- Flotación: translateY(-4px) en hover
 - Border-radius generoso: rounded-2xl (16px) en cards
-- Glassmorphism en nav: backdrop-blur-md + bg-white/80
+- Glassmorphism en nav: backdrop-blur + bg-white/70
+- Sección oscura del proceso: cards bg-white/5 + backdrop-blur
+
+## Jerarquía visual
+```
+DRA. BLUE          ← Nombre artístico / marca
+Odontología Estética y Rehabilitación Oral
+```
+- La doctora es protagonista: foto real en hero y sección "Sobre mí"
+- Voz en primera persona en todo el copy
