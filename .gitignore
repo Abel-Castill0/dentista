@@ -39,3 +39,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Respaldo privado
+CREDENCIALES_PRIVADAS_NO_SUBIR.txt
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Reportes y resultados regenerables
+/playwright-report/
+/test-results/

@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dentista — Dra. Blue
 
-## Getting Started
+Sitio web para odontología estética y rehabilitación oral en Surco, Lima.
 
-First, run the development server:
+## Requisitos
+
+- Node.js compatible con Next.js 16.
+- npm.
+- Variables de entorno según `.env.example` para activar Firebase y servicios externos.
+
+## Desarrollo
 
 ```bash
+npm ci
+Copy-Item .env.example .env.local # Windows PowerShell; completa los valores necesarios
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre <http://localhost:3000>.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Comandos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+npx playwright test
+```
 
-## Learn More
+## Configuración
 
-To learn more about Next.js, take a look at the following resources:
+Consulta `handoff.md` para configurar Firebase, Cloudinary, WhatsApp, n8n y analítica. Nunca publiques `.env.local` ni el respaldo privado de credenciales. Para desplegar en Vercel, configura las variables necesarias en el panel del proyecto.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Desarrollado por
 
-## Deploy on Vercel
+**Abel Castillo**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🌐 [Portafolio profesional](https://portafolio-henna-mu.vercel.app/)
